@@ -72,6 +72,57 @@ input, select, textarea {
 	appearance: none;
 }
 
+
+.profile-card {
+    text-align: center;
+    margin: 20px;
+}
+
+.profile-image img {
+    width: 200px; /* O el tamaño que prefieras */
+    height: 200px; /* Igual al ancho para mantener la forma circular */
+    border-radius: 50%; /* Esto crea el efecto circular */
+    border: 5px solid #0bd800; /* Ajusta el color de borde como desees */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra para dar profundidad */
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin deformarse */
+}
+
+.profile-info h2 {
+    font-size: 24px; /* Tamaño del título */
+    color: #333; /* Color del título */
+    margin-top: 10px; /* Espacio entre la imagen y el título */
+	margin-bottom: 0;
+}
+
+.profile-info p {
+    font-size: 16px; /* Tamaño del texto */
+    color: #666; /* Color del texto */
+}
+
+
+.about-me-box {
+    background: #f9f9f9; /* Fondo claro para el cuadro */
+    border: 1px solid #ddd; /* Borde sutil */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Sombra para efecto de profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin-top: 30px; /* Espacio entre la info del perfil y el cuadro */
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.about-me-box h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-me-box p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6; /* Espacio entre líneas para mejor legibilidad */
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -99,7 +150,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: #f9f8ee;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
